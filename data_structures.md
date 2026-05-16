@@ -236,10 +236,19 @@ from collections import deque
 
 queue = deque()
 
-queue.append("A")
-queue.append("B")
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.append(4)
 
-print(queue.popleft())
+queue.appendleft(0)
+
+print(queue.pop())     # LIFO
+print(queue.popleft()) # FIFO
+
+Output:
+4
+0
 ```
 
 ---

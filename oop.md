@@ -1044,10 +1044,10 @@ Advanced Python OOP enables developers to build:
 
 ## Official Documentation
 
-- urlPython Official Documentationhttps://docs.python.org/3/
-- urlPython Data Model Documentationhttps://docs.python.org/3/reference/datamodel.html
-- urlPython abc Module Documentationhttps://docs.python.org/3/library/abc.html
-- urlPython dataclasses Documentationhttps://docs.python.org/3/library/dataclasses.html
+- [Python Official Documentation](https://docs.python.org/3/)
+- [Python Data Model Documentation](https://docs.python.org/3/reference/datamodel.html)
+- [Python abc Module Documentation](https://docs.python.org/3/library/abc.html)
+- [Python dataclasses Documentation](https://docs.python.org/3/library/dataclasses.html)
 
 ## Recommended Practice Projects
 

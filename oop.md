@@ -877,9 +877,9 @@ class ModelTrainer:
 
 ### Libraries
 
-- entity["software","TensorFlow","Machine learning framework"]
-- entity["software","PyTorch","Machine learning framework"]
-- entity["software","scikit-learn","Machine learning library"]
+- entity["software","TensorFlow","Machine learning framework"]
+- entity["software","PyTorch","Machine learning framework"]
+- entity["software","scikit-learn","Machine learning library"]
 
 ---
 

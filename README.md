@@ -1,4 +1,4 @@
-# Comprehensive Python Tutorial
+# Comprehensive Python Guide
 
 ## Table of Contents
 

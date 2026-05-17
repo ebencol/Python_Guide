@@ -837,9 +837,9 @@ class UserService:
 
 ### Frameworks
 
-- entity["software","Django","Python web framework"]
-- entity["software","FastAPI","Python web framework"]
-- entity["software","Flask","Python web framework"]
+- Django
+- FastAPI
+- Flask
 
 ## Game Development
 
@@ -877,9 +877,9 @@ class ModelTrainer:
 
 ### Libraries
 
-- entity["software","TensorFlow","Machine learning framework"]
-- entity["software","PyTorch","Machine learning framework"]
-- entity["software","scikit-learn","Machine learning library"]
+- TensorFlow: Machine learning framework
+- PyTorch: Machine learning framework
+- scikit-learn: Machine learning library
 
 ---
 

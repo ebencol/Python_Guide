@@ -208,7 +208,7 @@ def product_except_self(nums):
 
 ## Question
 
-Find the contiguous subarray with the largest sum.
+Find the largest sum of the contiguous subarray.
 
 ### Example
 

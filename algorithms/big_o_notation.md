@@ -78,6 +78,8 @@ Suppose:
 
 The quadratic solution becomes catastrophically expensive.
 
+![Big O Notation Graphic](big_o.png)
+
 ---
 
 # 3. Time Complexity vs Space Complexity

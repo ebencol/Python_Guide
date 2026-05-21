@@ -1,4 +1,4 @@
-# Python String and Array Algorithm Practice Problems & Solutions
+# String and Array Algorithms
 
 ---
 

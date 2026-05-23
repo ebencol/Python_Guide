@@ -60,6 +60,15 @@ Output:
 2
 [5, 8]
 ```
+## Peek Smallest Element
+```python
+print(heap[0])
+```
+Output:
+```python
+5
+```
+Accessing index `0` is `O(1)`.
 
 
 

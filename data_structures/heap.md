@@ -46,4 +46,20 @@ Output:
 ```python
 [2, 5, 8]
 ```
+`heappop()`
+
+Removes and returns the smallest element.
+```python
+smallest = heapq.heappop(heap)
+
+print(smallest)
+print(heap)
+```
+Output:
+```python
+2
+[5, 8]
+```
+
+
 

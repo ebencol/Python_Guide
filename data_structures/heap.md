@@ -70,5 +70,157 @@ Output:
 ```
 Accessing index `0` is `O(1)`.
 
+# 3. Using Heap as a Priority Queue
+A priority queue processes elements by priority.
+
+Example: task scheduling.
+```python
+import heapq
+
+tasks = []
+
+heapq.heappush(tasks, (2, "Write report"))
+heapq.heappush(tasks, (1, "Fix critical bug"))
+heapq.heappush(tasks, (3, "Read emails"))
+
+while tasks:
+    priority, task = heapq.heappop(tasks)
+    print(priority, task)
+```
+Output:
+```python
+1 Fix critical bug
+2 Write report
+3 Read emails
+```
+The tuple is compared lexicographically:
+ - first by priority
+ - then by task name if priorities match
+
+# 4. Max Heap in Python
+`heapq` only supports min-heaps directly.
+
+To simulate a max-heap, store negative values.
+```python
+import heapq
+
+nums = [5, 1, 9, 3]
+
+max_heap = []
+
+for n in nums:
+    heapq.heappush(max_heap, -n)
+
+print(-heapq.heappop(max_heap))
+print(-heapq.heappop(max_heap))
+```
+Output:
+```python
+9
+5
+```
+# 5. `heappushpop()`
+Pushes then pops in one efficient operation.
+```python
+import heapq
+
+heap = [2, 4, 6]
+heapq.heapify(heap)
+
+result = heapq.heappushpop(heap, 1)
+
+print(result)
+print(heap)
+```
+Output:
+```python
+1
+[2, 4, 6]
+```
+Useful when maintaining a fixed-size heap.
+
+# 6. `heapreplace()`
+Pops smallest first, then pushes new item.
+```python
+import heapq
+
+heap = [2, 4, 6]
+heapq.heapify(heap)
+
+result = heapq.heapreplace(heap, 10)
+
+print(result)
+print(heap)
+```
+Output:
+```python
+2
+[4, 10, 6]
+```
+Difference from `heappushpop()`:
+- `heapreplace()` always removes first
+- `heappushpop()` may return the pushed item
+
+# 7. Largest and Smallest Elements
+`nsmallest()`
+```python
+import heapq
+
+nums = [8, 1, 4, 2, 10]
+
+print(heapq.nsmallest(3, nums))
+```
+Output:
+```python
+[1, 2, 4]
+```
+`nlargest()`
+```python
+print(heapq.nlargest(2, nums))
+```
+Output:
+```python
+[10, 8]
+```
+# 8. Merge Sorted Iterables
+`heapq.merge()` efficiently merges sorted lists.`
+```python
+import heapq
+
+a = [1, 4, 7]
+b = [2, 5, 8]
+c = [3, 6, 9]
+
+merged = heapq.merge(a, b, c)
+
+print(list(merged))
+```
+Output:
+```python
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+Efficient for large sorted streams.
+
+# 9. Common Interview Problems Using Heap
+### Kth Largest Element
+
+```python
+import heapq
+
+nums = [3, 2, 1, 5, 6, 4]
+k = 2
+
+result = heapq.nlargest(k, nums)[-1]
+
+print(result)
+```
+Output:
+```python
+5
+```
+
+
+
+
 
 

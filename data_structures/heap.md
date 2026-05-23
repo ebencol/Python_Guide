@@ -60,7 +60,7 @@ Output:
 2
 [5, 8]
 ```
-## Peek Smallest Element
+### Peek Smallest Element
 ```python
 print(heap[0])
 ```
@@ -218,6 +218,57 @@ Output:
 ```python
 5
 ```
+### Top K Frequent Elements
+
+```python
+from collections import Counter
+import heapq
+
+nums = [1,1,1,2,2,3]
+
+freq = Counter(nums)
+
+result = heapq.nlargest(
+    2,
+    freq.keys(),
+    key=freq.get
+)
+
+print(result)
+```
+Output:
+```python
+[1, 2]
+```
+# 10. Heap Internals
+Python heaps are stored in a list.
+
+For index `i`:
+- Left child → `2*i + 1`
+- Right child → `2*i + 2`
+- Parent → `(i - 1) // 2`
+
+Example heap:
+```python
+heap = [1, 3, 2, 7, 6, 4]
+```
+Tree structure:
+```
+        1
+      /   \
+     3     2
+    / \   /
+   7   6 4
+```
+# 11. Time Complexity
+| Operation     | Complexity   |
+| ------------- | ------------ |
+| `heapify()`   | `O(n)`       |
+| `heappush()`  | `O(log n)`   |
+| `heappop()`   | `O(log n)`   |
+| Peek smallest | `O(1)`       |
+| `nlargest()`  | `O(n log k)` |
+| `nsmallest()` | `O(n log k)` |
 
 
 

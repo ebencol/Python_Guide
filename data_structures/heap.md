@@ -1,0 +1,11 @@
+# Python heapq Module — Priority Queues and Heaps
+
+The built-in Python module heapq provides an implementation of the heap queue algorithm, also known as a priority queue.
+
+A heap is a specialized binary tree where:
+- The **smallest element** is always at the root (heap[0])
+- Insertions and removals are efficient:
+  - Push: O(log n)
+  - Pop smallest: O(log n)
+  - Peek smallest: O(1)
+Python’s heapq implements a **min-heap**.

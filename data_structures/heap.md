@@ -30,3 +30,20 @@ The list is rearranged into heap order.
 `heappush()`
 
 Adds an element while maintaining heap order.
+
+```python
+import heapq
+
+heap = []
+
+heapq.heappush(heap, 5)
+heapq.heappush(heap, 2)
+heapq.heappush(heap, 8)
+
+print(heap)
+```
+Output:
+```python
+[2, 5, 8]
+```
+

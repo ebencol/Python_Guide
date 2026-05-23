@@ -43,6 +43,18 @@ Testing ensures software reliability, maintainability, and correctness. In moder
 A healthy testing strategy follows the testing pyramid.
               
 ```text
+
+             /\
+            /  \
+           /    \
+          / E2E  \
+         /--------\
+        /Integrat- \
+       /     ion    \
+      /--------------\
+     /   Unit Tests   \
+    /__________________\
+
              /\
             /  \
            /     \

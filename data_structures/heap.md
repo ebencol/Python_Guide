@@ -25,3 +25,7 @@ Output:
 [1, 2, 8, 3, 5]
 ```
 The list is rearranged into heap order.
+
+# 2. Basic Heap Operations
+`heappush()`
+Adds an element while maintaining heap order.

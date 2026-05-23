@@ -270,8 +270,64 @@ Tree structure:
 | `nlargest()`  | `O(n log k)` |
 | `nsmallest()` | `O(n log k)` |
 
+# 12. When to Use `heapq`
+Use heaps when you need:
+- Priority queues
+- Efficient min/max retrieval
+- Top-K problems
+- Scheduling systems
+- Dijkstra’s algorithm
+- A* pathfinding
+- Streaming data processing
 
+# 13. Real-World Example — Task Scheduler
 
+```python
+import heapq
 
+jobs = []
 
+heapq.heappush(jobs, (3, "Low priority"))
+heapq.heappush(jobs, (1, "Urgent"))
+heapq.heappush(jobs, (2, "Medium"))
+
+while jobs:
+    priority, job = heapq.heappop(jobs)
+    print(f"Processing: {job}")
+```
+Output:
+```python
+Processing: Urgent
+Processing: Medium
+Processing: Low priority
+```
+# 14. Common Pitfalls
+### 1. Heap Is NOT Fully Sorted
+```python
+heap = [1, 3, 2, 7, 6]
+```
+This is valid because only parent-child order matters.
+### 2. Tuples Must Be Comparable
+This fails:
+```python
+heapq.heappush(heap, (1, object()))
+```
+if two priorities are equal.
+
+Solution:
+```python
+counter = 0
+heapq.heappush(heap, (priority, counter, item))
+```
+# 15. Summary
+| Function        | Purpose                |
+| --------------- | ---------------------- |
+| `heapify()`     | Convert list to heap   |
+| `heappush()`    | Insert item            |
+| `heappop()`     | Remove smallest        |
+| `heappushpop()` | Push then pop          |
+| `heapreplace()` | Pop then push          |
+| `nlargest()`    | Largest K elements     |
+| `nsmallest()`   | Smallest K elements    |
+| `merge()`       | Merge sorted iterables |
 
